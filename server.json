@@ -1,0 +1,11 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.syncsignature/email-signatures",
+  "title": "SyncSignature Email Signatures",
+  "description": "Manage team email signatures: teammates, groups, templates, banner campaigns, click analytics.",
+  "version": "1.0.0",
+  "websiteUrl": "https://syncsignature.com/mcp/",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://mcp.syncsignature.com/mcp" }
+  ]
+}
