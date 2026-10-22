@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "syncsignature",
+  "version": "1.0.0",
+  "description": "Manage your company's email signatures from an AI assistant: add teammates, assign templates by group, control banner campaigns and check signature click analytics.",
+  "author": { "name": "XMomentum Technologies Private Limited", "url": "https://syncsignature.com" },
+  "homepage": "https://syncsignature.com/mcp/",
+  "repository": "https://github.com/SyncSignature/mcp",
+  "license": "MIT",
+  "keywords": ["email signature", "email signature management", "google workspace", "microsoft 365", "outlook", "gmail", "mcp"]
+}
