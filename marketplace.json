@@ -1,0 +1,15 @@
+{
+  "name": "syncsignature",
+  "owner": {
+    "name": "SyncSignature",
+    "url": "https://syncsignature.com"
+  },
+  "plugins": [
+    {
+      "name": "syncsignature",
+      "source": "./",
+      "description": "SyncSignature Email Signatures: MCP server plus the syncsignature-admin skill."
+    }
+  ],
+  "description": "SyncSignature Email Signatures: manage team email signatures from Claude with the SyncSignature MCP server and the syncsignature-admin skill."
+}
