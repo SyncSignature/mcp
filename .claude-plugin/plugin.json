@@ -1,5 +1,6 @@
 {
   "name": "syncsignature",
+  "displayName": "SyncSignature Email Signatures",
   "version": "1.0.0",
   "description": "Manage your company's email signatures from Claude: add teammates, assign templates by group, control banner campaigns and check signature click analytics.",
   "author": {
