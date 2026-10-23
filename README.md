@@ -1,5 +1,7 @@
 **[SyncSignature](https://syncsignature.com/mcp/)**: email signature management for teams, from any AI assistant.
 
+[![SyncSignature Email Signatures MCP connector – tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/com.syncsignature/email-signatures/badges/score.svg)](https://glama.ai/mcp/connectors/com.syncsignature/email-signatures)
+
 # SyncSignature Email Signatures (MCP server)
 
 Manage your company's email signatures from an AI assistant: add teammates, assign templates by group, control banner campaigns and check signature click analytics. Works with Google Workspace and Microsoft 365 workspaces.
