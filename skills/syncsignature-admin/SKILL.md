@@ -1,6 +1,6 @@
 ---
 name: syncsignature-admin
-description: Manage a company's email signatures through the SyncSignature MCP server. Use when the user asks to add or update teammates, assign signature templates by group, edit a signature template, pause or resume a banner campaign, audit missing signature data, check signature click analytics, or check Google Workspace or Microsoft 365 sync status.
+description: Manage a company's email signatures through the SyncSignature MCP server. Use when the user asks to set up a branded signature template from their company website, add or update teammates, assign signature templates by group, edit a signature template, pause or resume a banner campaign, audit missing signature data, check signature click analytics, or check Google Workspace or Microsoft 365 sync status.
 ---
 
 # SyncSignature skills for AI assistants
@@ -43,6 +43,12 @@ A company email-signature manager. A workspace has **teammates** (people), **gro
 
 If the preview answers `unrenderable_signature`, the template's icons have not been uploaded yet: tell the user to open the template once in the SyncSignature app, and fall back to showing the current and proposed values and the affected count (add up `teammate_count` from `list_groups` for the groups carrying this template).
 
+### Make a branded template from a company's website
+1. `create_workspace_template_from_domain` with the domain (e.g. `acme.com`). Optional: `template_id` from `list_signature_templates` (default 56), `name`, `company_name`. This first call is a dry run: nothing is saved.
+2. Show the user the preview and what was found: logo (and where it came from), brand colour, company phone, address, social links. If the reply carries a note that the logo came from the website, ask the user to check it is the company's own logo; a website can show customers' logos too.
+3. On a clear yes, call it again with the same inputs and `dry_run: false`. Report the new template's name and id.
+4. The template is in no group, so nobody's signature changed. To use it, `update_group` with `template_id` set to the new id; that goes live for everyone in the group, so give the group's `teammate_count` and ask first.
+
 ### Run a banner campaign
 New campaigns are created in the SyncSignature app, because the banner image has to be uploaded there. If the user asks to start one, tell them to create it in the app. Here you can manage existing campaigns:
 1. `list_campaigns` to find the campaign, its dates and its groups; `list_groups` to resolve group names.
@@ -61,6 +67,7 @@ New campaigns are created in the SyncSignature app, because the banner image has
 - "Add Priya Shah, priya@acme.com, Sales Manager, to the Sales group."
 - "Which teammates have no phone number?"
 - "Change the phone number on the Sales template. Preview it with Priya's details and tell me who it affects first."
+- "Make a signature template for acme.com and show me what it looks like."
 - "Pause our webinar banner for the Sales group."
 - "Which teammates got the most signature clicks last month?"
 - "Is our Google Workspace sync connected?"
