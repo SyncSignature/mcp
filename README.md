@@ -4,7 +4,7 @@
 
 # SyncSignature Email Signatures (MCP server)
 
-Manage your company's email signatures from an AI assistant: add teammates, assign templates by group, control banner campaigns and check signature click analytics. Works with Google Workspace and Microsoft 365 workspaces.
+Manage your company's email signatures from an AI assistant: build a branded template from your website, add teammates, assign templates by group, control banner campaigns and check signature click analytics. Works with Google Workspace and Microsoft 365 workspaces.
 
 SyncSignature does not route or read your email. You can connect with read-only access.
 
@@ -46,6 +46,7 @@ After connecting, the assistant should read the skill at [skills/syncsignature-a
 
 ## Example requests
 
+- "Make a signature template for acme.com and show me what it looks like."
 - "Add Priya Shah, priya@acme.com, Sales Manager, to the Sales group."
 - "Which teammates have no phone number?"
 - "Change the phone number on the Sales template. Preview it with Priya's details and tell me who it affects first."
@@ -53,7 +54,7 @@ After connecting, the assistant should read the skill at [skills/syncsignature-a
 - "Which teammates got the most signature clicks last month?"
 - "Is our Google Workspace sync connected?"
 
-## Tools (30)
+## Tools (31)
 
 Reads change nothing. Every write asks the user to confirm first.
 
@@ -81,6 +82,7 @@ Reads change nothing. Every write asks the user to confirm first.
 | `delete_group` | Delete | Delete a group and the signatures built from it |
 | `add_teammates_to_group` | Write | Assign teammates to a group, building their signatures |
 | `remove_teammates_from_group` | Write | Take teammates out of a group |
+| `create_workspace_template_from_domain` | Write | Build a branded template from a company domain (logo, brand colour, phone, address, social links); previews first and saves only after the user confirms. The new template is in no group until assigned |
 | `update_workspace_template` | Write | Change a template; goes live for every teammate using it |
 | `update_campaign` | Write | Change a campaign's content, schedule or groups |
 | `pause_campaign` | Write | Pause a running campaign and pull its banner |
