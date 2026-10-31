@@ -1,7 +1,7 @@
 {
   "name": "syncsignature",
-  "version": "1.0.0",
-  "description": "Manage your company's email signatures from Gemini CLI: teammates, groups, templates, banner campaigns and click analytics.",
+  "version": "1.1.0",
+  "description": "Manage your company's email signatures from Gemini CLI: branded templates from your website, teammates, groups, banner campaigns and click analytics.",
   "mcpServers": {
     "syncsignature": { "httpUrl": "https://mcp.syncsignature.com/mcp" }
   },
