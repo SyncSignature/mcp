@@ -1,5 +1,6 @@
 {
   "mcpServers": {
-    "syncsignature": { "type": "http", "url": "https://mcp.syncsignature.com/mcp" }
+    "syncsignature": { "type": "http", "url": "https://mcp.syncsignature.com/mcp" },
+    "syncsignature-generator": { "type": "http", "url": "https://mcp.syncsignature.com/public/mcp" }
   }
 }
