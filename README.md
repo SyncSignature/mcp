@@ -18,6 +18,22 @@ SyncSignature does not route or read your email. You can connect with read-only 
 
 This repository holds the connection manifests and the agent skill. The server itself is hosted by SyncSignature; there is nothing to run locally.
 
+## Try it without an account
+
+The SyncSignature Email Signature Generator is a second, public MCP server. Give it a company website domain and it returns a branded email signature: the logo, brand colour, phone, address and social links it finds on the site, with an HTML preview. Add a name, job title, email and phone to personalise it. It needs no sign-in and saves nothing.
+
+| | |
+|---|---|
+| Server URL | `https://mcp.syncsignature.com/public/mcp` |
+| Authentication | None |
+| Tool | `create_signature_from_domain` (read-only) |
+
+- **Claude**: Settings, Connectors, add a custom connector with the URL above and no authentication.
+- **Claude Code**: `claude mcp add --transport http syncsignature-generator https://mcp.syncsignature.com/public/mcp`
+- **Cursor, Gemini CLI and the Claude plugin** in this repository include it next to the account server.
+
+Try: "Make an email signature for acme.com." To save it as a team template, add teammates and install it in Gmail or Outlook, sign up from the link in the answer and connect the account server below.
+
 ## Install
 
 - **Claude** (web, desktop, mobile, Cowork): open [claude.ai/directory/syncsignature](https://claude.ai/directory/syncsignature) and click Connect.
