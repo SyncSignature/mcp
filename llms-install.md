@@ -25,4 +25,6 @@ Transport: Streamable HTTP. Authentication: OAuth (sign in with your SyncSignatu
 
 - Any other MCP client: add a remote MCP server with the URL above and complete the browser sign-in.
 
+No account yet? The public Email Signature Generator at https://mcp.syncsignature.com/public/mcp needs no sign-in: add it as a remote MCP server (Streamable HTTP, no authentication) and ask for a signature for a company domain.
+
 After connecting, read https://mcp.syncsignature.com/skills before doing anything else.
