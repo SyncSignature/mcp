@@ -24,12 +24,12 @@ The SyncSignature Email Signature Generator is a second, public MCP server. Give
 
 | | |
 |---|---|
-| Server URL | `https://mcp.syncsignature.com/public/mcp` |
+| Server URL | `https://generator.syncsignature.com/mcp` |
 | Authentication | None |
 | Tool | `create_signature_from_domain` (read-only) |
 
 - **Claude**: Settings, Connectors, add a custom connector with the URL above and no authentication.
-- **Claude Code**: `claude mcp add --transport http syncsignature-generator https://mcp.syncsignature.com/public/mcp`
+- **Claude Code**: `claude mcp add --transport http syncsignature-generator https://generator.syncsignature.com/mcp`
 - **Cursor, Gemini CLI and the Claude plugin** in this repository include it next to the account server.
 
 Try: "Make an email signature for acme.com." To save it as a team template, add teammates and install it in Gmail or Outlook, sign up from the link in the answer and connect the account server below.
