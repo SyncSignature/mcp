@@ -1,6 +1,6 @@
 {
   "mcpServers": {
     "syncsignature": { "url": "https://mcp.syncsignature.com/mcp" },
-    "syncsignature-generator": { "url": "https://mcp.syncsignature.com/public/mcp" }
+    "syncsignature-generator": { "url": "https://generator.syncsignature.com/mcp" }
   }
 }
