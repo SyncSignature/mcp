@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "syncsignature",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Manage your company's email signatures from an AI assistant: build a branded template from your website, add teammates, assign templates by group, control banner campaigns and check signature click analytics.",
   "author": { "name": "XMomentum Technologies Private Limited", "url": "https://syncsignature.com" },
   "homepage": "https://syncsignature.com/mcp/",
